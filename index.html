@@ -26,6 +26,29 @@
     }
     .emoji { font-size: 4rem; }
     h1 { margin: .5rem 0; color: #1e9e5a; }
+    .contatos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: .75rem;
+      margin: 1.5rem 0;
+      text-align: left;
+    }
+    .contato {
+      padding: 1rem;
+      border: 1px solid #e5e5ea;
+      border-radius: 8px;
+      background: #fff8f6;
+    }
+    .contato strong { display: block; margin-bottom: .35rem; }
+    .contato a { color: #a71920; font-size: 1.4rem; font-weight: 700; }
+    .endereco {
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 4px solid #d62828;
+      background: #f2f2f7;
+      text-align: left;
+      line-height: 1.6;
+    }
     .versao {
       margin-top: 1.5rem;
       padding: 1rem;
@@ -44,6 +67,28 @@
     <h1>Versão #5 - corrigida</h1>
     <p>salvando vidas desde 1970</p>
     <p>O erro foi corrigido e o robô publicou de novo.</p>
+
+    <section class="contatos" aria-label="Telefones de emergência">
+      <div class="contato">
+        <strong>Bombeiros · emergência 24 horas</strong>
+        <a href="tel:193">193</a>
+        <div>Ligação gratuita em todo o Brasil.</div>
+      </div>
+      <div class="contato">
+        <strong>SAMU · urgência médica</strong>
+        <a href="tel:192">192</a>
+      </div>
+      <div class="contato">
+        <strong>Polícia Militar · emergência</strong>
+        <a href="tel:190">190</a>
+      </div>
+    </section>
+
+    <div class="endereco">
+      <strong>Endereço de referência do Comando do Corpo de Bombeiros:</strong><br>
+      Praça Clóvis Beviláqua, 421 — Sé, São Paulo — SP, 01018-001.<br>
+      Para emergências, não vá até o endereço: ligue 193 para ser direcionado a uma unidade.
+    </div>
 
     <div class="versao">
       🤖 <strong>Publicado pelo robô em:</strong> __DATA__<br>
